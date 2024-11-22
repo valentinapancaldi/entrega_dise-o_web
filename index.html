@@ -3,46 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Old Gold</title>
+    
+    <!--link to css from Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+
+    <!--link for my css-->
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--link js from Bootstrap-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h6> Valentina Pancaldi</h6>
-
+    <nav class="navbar navbar-expand-md"  data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Old gold <img src="images/logo.png" alt="logo" class="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miMenu" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="miMenu">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/aura_sjewlery/">Instagram</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.tiktok.com/@aura_sjewlery?_t=8ndz9LbsVeQ&_r=1&fbclid=PAZXh0bgNhZW0CMTEAAaZkOgZUpZviOFbxyHFEQgQMgoSyqg7_JGkg-HPyQC-u0MciEjv02IjBp_I_aem_KSZByIt8D_tK41NGcJ8Kqw">TikTok</a>
+              </li>
+            </ul>
+           
+          </div>
+        </div> <!--closes the container-fluid div-->
+    </nav> <!--closes the navigation bar-->
+    <header class="container-fluid">
+        <img src="images/home_screen.png" alt="home screen" class="img-fluid">
     </header>
-    <main>
-        <h1>3DISH</h1>
-        <h4>Virtual reality and 3D technology has reached the gastronomic industry.</h4>
-        <a href="https://www.instagram.com/3dish.ar/" target="_blank"> <strong>Instagram</strong></a>
-        <div id="text-1">
-            <h2>Innmerse yourself in a new reality.</h2>
-        </div>
 
-        <div id="text-2">
-            <p>with 3DISH your new interactive menu brings your plates to life showing their true aspect, ingredientes and sizes. this new technologies will bring your restaurant to the next level making it truly stand out in the enormous highly competitive market.</p>
+    <main class="container-lg">
+        <div class="intro">
+            <h1>Old gold</h1>
+            <h4>Where classic beauty meets enduring craftsmanship. Our designs celebrate sophistication, blending tradition with a touch of modern luxury.</h4>
         </div>
+        <div class="row aling-items-md-center justify-content-lg-between align-items-lg-start ">
+              <div class="col-md-6 col-lg-3">
+                  <h3>SUSTAINABLY SOURCED</h3>
+                  <p>Old gold redefines elegance sustainably. Our commitment to ethically sourced materials reflects a conscious choice for both style and the planet. Choose Old Gold for opulence with a purpose.</p>
+              </div> <!--primer div-->
+              <div class="col-md-6 col-lg-3">
+                  <h3>ETHICALLY CRAFTED</h3>
+                  <p>Our jewelry not only adorns you with exquisite beauty but also reflects a conscious choice for a better world. Choose Old Gold for treasures that not only captivate but also uphold the highest ethical standards in every detail.</p>
+              </div> <!--segundo div-->
+              <div class="col-lg-3">
+                  <h3>TIMELESS DURABILITY </h3>
+                  <p>Old Gold combines timeless design with unparalleled quality. Each piece is crafted to endure, ensuring that your treasures remain as captivating as the day they were created. Choose Old Gold for elegance that stands the test of time.</p>
+              </div> <!--tercer div-->
+      
+        </div> <!--fila-->
 
-        <div id="imgs">
-            <img src="images/img1.jpg" alt="Interactive menu">
-            <img src="images/img2.jpg" alt="Gastronomic experience">
-            <img src="images/img3.jpg" alt="Aumented Reality">
-        </div>
-        <div id="text-1">
-            <h2>Ready to soar into the future?</h2>
-            <h2>That's why 3DISH is here.</h2>
-        </div>
-
-        <img src="images/logo.jpg" alt="Interactive menu">
-     
-
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#miModal">
+           Log in
+         </button>
     </main>
-    <footer>
-        <h5> </h5>
+
+    <section class="formulario">
+        <div class="modal fade" id="miModal" tabindex="-1">
+            <div class="modal-dialog modal-xl modal-fullscreen-lg-down">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h2 class="modal-title">Login Form</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div> <!--modal header-->
+
+                    <div class="modal-body">
+                        <form class="needs-validation" novalidate action="code.php" method="post">
+                            <div class="position-relative">
+                                <label for="name" class="form-label">Username</label>
+                                <input required class="form-control" type="text" name="name" id="name">
+                                <div class="invalid-tooltip">This username does not exist</div>
+                                <!--closes the div for the invalid feedback-->
+                            </div> <!--closes the div for the name-->
+                            <div class="position-relative">
+                                <label for="password" class="form-label">Password</label>
+                                <input required type="password" name="password" id="password" class="form-control">
+                                <div class="invalid-tooltip">Ups! Looks like the password is incorrect.</div>
+                            </div> <!--closes the div for the email-->
+                            <button class="btn btn-warning"> Send</button>
+                        </form> <!--closing for the form-->
+                    </div> <!--modal body closes-->
+
+                    <div class="modal-footer">
+                        <p data-bs-dismiss="modal">Back to web</p>
+                    </div> <!--modal footer closes-->
+
+                </div> <!--modal content closes-->
+         </div> <!--modal dialog closes-->
+        </div> <!--modal div closes-->
+
+    </section>
+
+    <h2>Our new colections</h2>
+     
+    <div class="new-coll">
+        <p>Meet the Mayla Collection, for everyday use, and the Theia Collection, to keep wearing your own style this summer.</p>
+    </div>
+    
+
+    <div class="image-container">
+        <img src="images/sustainable_photo.jpeg" alt="home screen" class="img-fluid"> 
+        <img src="images/m_coll.png" alt="home screen" class="img-fluid">
+    </div>
+    
+
+    <script src="js/code.js"></script>
+      
+    <footer class="container-fluid text-light">
 
     </footer>
-
-
+    
 </body>
 </html>

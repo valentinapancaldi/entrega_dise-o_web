@@ -1,111 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-* {
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Kalnia:wdth,wght@100..125,100..700&display=swap');
+
+body {
+    font-family: 'Kalnia', sans-serif; 
+    background-color: #1d2c3c;
+    color: #fdefbc;
+
+}
+.navbar-brand{
+    font-family: 'Dawning of a New Day', cursive;
+    font-size: 2em;
+    
+}
+
+header img{
+    width: 100%;
+}
+
+.intro{
+    text-align: center;
+    padding: 3em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.row{
+    margin-top: 6em;
+}
+
+.row p{
+    text-align: center;
 }
 
 h1{
-    font-family: "Archivo Black", sans-serif;
-    font-size: 4.5em;
+    font-family: 'Dawning of a New Day', cursive;
+    font-size: 6em;
+    font-weight: 600;
+    margin-bottom: 0.4em;
 }
 
-h1, h2{
-    color: #fb9b0c;
+h2{
+    text-align: center;
+    margin-top: 2em;
+    font-size: 3em;
 }
 
-h2{ 
-    line-height: 2em;
-    font-size: 1.75em;
-    margin-top: 3em;
-    font-weight: 400;
-}
-
-h6{
-    color: rgb(158, 148, 135);
-}
-body{
-    font-family: "Roboto Mono", monospace; ;
-    background-color: black;
-    color: antiquewhite;
+h3{
+    text-align: center;
+    margin-top: 2em;
+    font-size: 1.5em;
 
 }
-a{
-    text-decoration: none;
-    color: antiquewhite;
-    padding-left: 0.75em;
-    transition-property: color;
-    transition-duration: 0.5s;
+h4{
+    font-size: medium;
+    font-weight: 300;
 }
 
-a:hover{
-    color: rgb(255, 201, 136);
-    text-decoration: underline;
+
+.logo {
+    width: 40px;
+    height: auto; 
+}
+
+.image-container {
+    padding: 10em;
+    display: flex; 
+    justify-content: space-between; 
+    gap: 8px; 
+}
+
+.image-container img {
+    width: 50%; 
+}
+
+@media (max-width: 768px) {
+    .image-container  {
+        display: block;
+    }
+    .image-container img {
+        width: 100%; 
+        margin-top: 80px;
+    }
+}
+
+nav{
+    background-color: #364f6b;
 }
 
 p{
-    font-size: 0.75em;
-    text-transform: capitalize;
+    font-weight: 200;
+    font-size: medium;
 }
 
-header{
-    width: 93%;
-    margin: auto;
+#miModal .modal-content {
+    background-color: #364f6b;
+    color: #fdefbc;
 }
-main{
-    width: 83.33%;
-    margin: auto;
+
+.new-coll{
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
 }
+
 footer{
-    width: 100%;
-    height: 8em;
-    background-color: rgb(36, 36, 36);
-}
-#imgs{
-    display: flex;
-    justify-content: space-between;
-}
-
-#imgs img:hover {
-    border-color: #fb9b0c;
-    border-width: 6px; 
-    transition: all 0.4s ease-in-out; 
-}
-
-[src="images/logo.jpg"] {
-    display: block; 
-    margin: 7em auto;
-}
-
-img{
-    width: 30%;
-    display: block;
-    margin: 4.5em 0;
-
-    border: 3px solid rgb(36, 36, 36);
-    border-radius: 10px;
-}
-
-#text-1{
-    width: 50%;
-}
-
-#text-2{
-    width: 30%;
-}
-
-
-@media(max-width:768px){
-    body{
-        font-size: 80%;
-    }
-
-    h2{
-        line-height: 1.75em;
-        margin-top: 2em;
-    }
-
-    [src="images/logo.jpg"] {
-        margin: 6em auto;
-    }
-
+    background-color: #364f6b;
+    height: 200px;
 }
